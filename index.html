@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Virtual</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef;
+            color: #333;
+        }
+        
+        /* Encabezado */
+        header {
+            background: linear-gradient(135deg, #35424a, #506a7a);
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #ffffff;
+            color: #35424a;
+        }
+
+        /* Contenedor principal */
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Barra de búsqueda */
+        .search-bar {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .search-bar input[type="text"] {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            margin-right: 10px;
+        }
+        .search-bar input[type="submit"] {
+            padding: 10px 20px;
+            background: #35424a;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background 0.3s;
+        }
+        .search-bar input[type="submit"]:hover {
+            background: #506a7a;
+        }
+
+        /* Lista de libros */
+        .book-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .book {
+            flex: 1 1 25%;
+            text-align: center;
+            max-width: 200px;
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .book:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+        .book img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .book p {
+            font-size: 1em;
+            font-weight: bold;
+            color: #35424a;
+        }
+
+        /* Pie de página */
+        footer {
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9em;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a la Biblioteca Virtual</h1>
+        <nav>
+            <a href="#">Gloria Albertina Ixén Ajpop</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Explora Nuestro Contenido</h2>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar libros, autores...">
+            <input type="submit" value="Buscar">
+        </div>
+        <p>Encuentra una amplia variedad de libros y recursos. Regístrate para obtener acceso completo.</p>
+
+        <h3>Libros Recomendados</h3>
+        <div class="book-list">
+            <div class="book">
+                <a href="libro1/index.html" target="_blank">
+                    <img src="img/pidam.png" alt="Libro 1">
+                    <p>Pídeme Lo Que Quieras</p>
+                </a>
+            </div>
+            <div class="book">
+                <a href="libro 2/index.html" target="_blank">
+                    <img src="img/7 habitos.png" alt="Libro 2">
+                    <p>Los 7 Hábitos de la Gente Altamente Efectiva</p>
+                </a>
+            </div>
+            <div class="book">
+                <a href="libro 3/index.html" target="_blank">
+                    <img src="img/podermenete.png" alt="Libro 3">
+                    <p>El Poder de la Mente Subconsciente</p>
+                </a>
+            </div>
+            <div class="book">
+                <a href="libro 4/index.html" target="_blank">
+                    <img src="img/entenando.png" alt="Libro 4">
+                    <p>Entrenando la Memoria para Estudiar con Éxito</p>
+                </a>
+            </div>
+            <div class="book">
+                <a href="libro 5/index.html" target="_blank">
+                    <img src="img/el poder curativo de la mente.png" alt="Libro 5">
+                    <p>El Poder Curativo de la Mente</p>
+                </a>
+            </div>
+            <div class="book">
+                <a href="libro 6/index.html" target="_blank">
+                    <img src="img/la mente.png" alt="Libro 6">
+                    <p>La Mente Humana</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Biblioteca Virtual. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
